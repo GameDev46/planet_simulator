@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+	background; rgb(255, 255, 255);
+	overflow: hidden;
+	-webkit-overflow: hidden;
+}
+
+canvas {
+	border: 2px solis rgb(190, 190, 190);
+	border-radius: 0;
+	background: rgb(10, 10, 10);
+	left: 0;
+	top: 0;
+	user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-webkit-touch-callout: none;
+}
+
+.user-settings {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 210px;
+	height: 30px;
+	background: rgba(255, 255, 255, 0.6);
+	backdrop-filter: blur(10px);
+	overflow: hidden;
+	border-radius: 3px;
+	cursor: default;
+	transition: height 0.2s ease-out;
+}
+
+.user-settings > h1 {
+	position: relative;
+	width: 100%;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 100;
+	font-size: 13px;
+	letter-spacing: 1px;
+	color: rgb(13, 13, 13);
+	text-align: left;
+	padding-left: 10px;
+	transform: translateY(-4px);
+	cursor: pointer;
+	user-select: none;
+}
+
+.user-settings > h1 > svg {
+	width: 15px;
+	height: 15px;
+	color: rgb(13, 13, 13);
+	transform: translateY(3px) rotateZ(-90deg);
+	transition: 0.2s linear;
+}
+
+.user-settings > label {
+	position: relative;
+	display: block;
+	width: 100%;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 100;
+	font-size: 13px;
+	letter-spacing: 1px;
+	color: rgb(13, 13, 13);
+	text-align: left;
+	padding-left: 10px;
+}
+
+.user-settings > input[type=range] {
+	position: relative;
+	-webkit-appearance: none;
+  appearance: none;
+	width: 80%;
+	height: 5px;
+	background: rgba(255, 255, 255, 0.3);
+	border-radius: 2px;
+	margin-left: 10px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 100;
+	font-size: 13px;
+	letter-spacing: 1px;
+	color: rgb(13, 13, 13);
+	text-align: left;
+	transition: 0.1s linear;
+}
+
+.user-settings > input[type=range]:hover {
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.user-settings > input[type=range]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  background: rgb(100, 100, 230);
+  cursor: pointer;
+	border-radius: 10px;
+}
+
+.user-settings > input[type=checkbox] {
+	-webkit-appearance: none;
+  appearance: none;
+  background-color: rgba(100, 100, 230, 0);
+  margin: 0;
+	border: 2px solid rgba(0, 0, 0, 0.2);
+	border-radius: 3px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	transition: 0.1s linear;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+.user-settings > input[type=checkbox]:hover {
+	border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.user-settings > input[type=checkbox]:checked {
+	background: rgba(100, 100, 230, 1);
+}
+
+.user-settings > button {
+	position: relative;
+	width: 80%;
+  height: 40px;
+  background: rgb(230, 101, 101);
+	outline: none;
+	border: none;
+	border-radius: 3px;
+	margin-left: 20px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 100;
+	font-size: 13px;
+	letter-spacing: 1px;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	transition: 0.1s linear;
+	box-shadow: 0 4px 1px rgb(210, 91, 91);
+	cursor: pointer;
+}
+
+.user-settings > button:hover {
+	box-shadow: 0 1px 1px rgb(210, 91, 91);
+	transform: translateY(3px);
+}
+
+.user-settings > button > svg {
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	transform: translate(-23px, -1px);
+}
+
+.spacing {
+	width: 100%;
+	height: 10px;
+}
