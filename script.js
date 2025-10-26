@@ -1,22 +1,3 @@
-/*
-
- _____                         ______                 ___   ____ 
-|  __ \                        |  _  \               /   | / ___|
-| |  \/  __ _  _ __ ___    ___ | | | |  ___ __   __ / /| |/ /___ 
-| | __  / _` || '_ ` _ \  / _ \| | | | / _ \\ \ / // /_| || ___ \
-| |_\ \| (_| || | | | | ||  __/| |/ / |  __/ \ V / \___  || \_/ |
- \____/ \__,_||_| |_| |_| \___||___/   \___|  \_/      |_/\_____/
-
-
-*/
-
-/* 
-	AUTHOR: GameDev46
-
-	Youtube: https://www.youtube.com/@gamedev46
-	Github: https://github.com/GameDev46
-*/
-
 const canvas = document.getElementById("mainCanvas");
 const ctx = canvas.getContext("2d");
 
@@ -56,10 +37,8 @@ const dragWidth = 3;
 const particleColour = "#ffffff";
 
 function initCanvas() {
-
 	canvas.width = window.innerWidth;
 	canvas.height = window.innerHeight;
-	
 }
 
 window.addEventListener("resize", e => {
@@ -460,13 +439,11 @@ function round(num, roundVal) {
 
 document.getElementById("friction").addEventListener("input", e => {
 	worldFriction = 1 - Number(document.getElementById("friction").value);
-
 	document.getElementById("friction-counter").innerText = "Friction: " + round(Number(document.getElementById("friction").value), 100);
 })
 
 document.getElementById("gravitational-const").addEventListener("input", e => {
 	gravitationalConst = Number(document.getElementById("gravitational-const").value);
-
 	document.getElementById("gravitational-const-counter").innerText = "Gravitational Const: " + round(Number(document.getElementById("gravitational-const").value), 1000);
 })
 
